@@ -5,21 +5,21 @@
 class Argoxd < Formula
   desc "Interactive terminal UI for Argo CD"
   homepage "https://github.com/awcodify/argoxd"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/awcodify/argoxd/releases/download/v0.1.0/argoxd_0.1.0_darwin_amd64.tar.gz"
-      sha256 "613d202670136f5d4c620dcbd5161fec2ac61218dd84da2b147f3af3dca8007f"
+      url "https://github.com/awcodify/argoxd/releases/download/v0.2.0/argoxd_0.2.0_darwin_amd64.tar.gz"
+      sha256 "e66bf3663fdc082eb03579e720d9bb4a05eb50176c4ca28e4666dd2649a1c65d"
 
       define_method(:install) do
         bin.install "argoxd"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/awcodify/argoxd/releases/download/v0.1.0/argoxd_0.1.0_darwin_arm64.tar.gz"
-      sha256 "74210a13fc3d542deb80ea40b296d22a9f8031e4b9744d9d4d60dd1739aef2ca"
+      url "https://github.com/awcodify/argoxd/releases/download/v0.2.0/argoxd_0.2.0_darwin_arm64.tar.gz"
+      sha256 "710ad40b374c246874a88d20da9a41fbdcd8245a65308ed4a6e7a31aeab819f7"
 
       define_method(:install) do
         bin.install "argoxd"
@@ -29,15 +29,15 @@ class Argoxd < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/awcodify/argoxd/releases/download/v0.1.0/argoxd_0.1.0_linux_amd64.tar.gz"
-      sha256 "e252d10518b9bfb804b8f2a5233a4e548817c23df42feb139936e8ae58912cff"
+      url "https://github.com/awcodify/argoxd/releases/download/v0.2.0/argoxd_0.2.0_linux_amd64.tar.gz"
+      sha256 "6e4dd66418bc2808876b0ab65576881ebadb6fa80abffbfa03177db48a0e1038"
       define_method(:install) do
         bin.install "argoxd"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/awcodify/argoxd/releases/download/v0.1.0/argoxd_0.1.0_linux_arm64.tar.gz"
-      sha256 "c8e2212a9f7ca9f441fac08c2240d6c7aa494e5c77469bdd15efbf77bea93f44"
+      url "https://github.com/awcodify/argoxd/releases/download/v0.2.0/argoxd_0.2.0_linux_arm64.tar.gz"
+      sha256 "1f506e777654d15b0110a3a26c65d0d1beee7e9f912bdabec45350e0e5e22e58"
       define_method(:install) do
         bin.install "argoxd"
       end
